@@ -1,0 +1,47 @@
+
+import { Box, Typography } from "@mui/material";
+import placeholderImg from "../../assets/placeholder.png"
+
+const SongBar: React.FC = () => {
+  return (<Box sx={{
+  }}>
+    <Box sx={{
+      display: "flex",
+      height: "100%",
+      // background: "red",
+      justifyContent: "center",
+      // alignItems: "center"
+    }}>
+      <img src={placeholderImg} alt="user avatar" style={{
+        width: "90px",
+        border: "transparent 10px solid"
+      }} />
+      <Box sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}>
+        <Typography variant="h6">
+          Song Titlte
+        </Typography>
+        <Typography variant="subtitle1">
+          Subtitle
+        </Typography>
+      </Box>
+      <Box sx={{
+        background: "red"
+      }}>
+        <Box sx={{
+          background: "green"
+        }}>
+          top
+        </Box>
+        <Box>
+          bottom
+        </Box>
+      </Box>
+    </Box>
+  </Box>);
+};
+
+export default SongBar;
